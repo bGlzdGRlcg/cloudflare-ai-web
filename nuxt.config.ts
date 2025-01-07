@@ -38,9 +38,9 @@ export default defineNuxtConfig({
         strategy: 'no_prefix',
         defaultLocale: 'zh',
     }
-    // nitro: {
-    //     vercel: {
-    //         regions: ["sin1", "syd1", "sfo1", "iad1", "pdx1", "cle1"]
-    //     }
-    // }
+    nitro: {
+        vercel: {
+            regions: ["sin1", "syd1", "sfo1", "iad1", "pdx1", "cle1"]
+        }
+    }
 })
