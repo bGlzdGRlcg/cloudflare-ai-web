@@ -177,16 +177,6 @@ export const imageGenModels: Model[] = [{
     name: 'stable-diffusion-xl-lightning',
     provider: 'workers-ai-image',
     type: 'text-to-image'
-}, {
-    id: '@cf/runwayml/stable-diffusion-v1-5-inpainting',
-    name: 'stable-diffusion-v1-5-inpainting',
-    provider: 'workers-ai-image',
-    type: 'text-to-image'
-}, {
-    id: '@cf/black-forest-labs/flux-1-schnell',
-    name: 'flux-1-schnell',
-    provider: 'workers-ai-image',
-    type: 'text-to-image'
 }]
 
 export const models: Model[] = [...uniModals, ...textGenModels, ...imageGenModels]
