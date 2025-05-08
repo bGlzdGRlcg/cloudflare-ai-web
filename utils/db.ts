@@ -96,12 +96,6 @@ export const uniModals: Model[] = [
 		provider: "google",
 		type: "universal",
 	},
-	{
-		id: "gemini-2.5-flash-preview-04-17",
-		name: "Gemini 2.5 Flash",
-		provider: "google",
-		type: "universal",
-	},
 ];
 
 export const textGenModels: Model[] = [
