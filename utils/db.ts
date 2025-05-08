@@ -91,14 +91,14 @@ export const uniModals: Model[] = [
 		type: "universal",
 	},
 	{
-		id: "gemini-2.0-flash-exp",
-		name: "Gemini 2.0 Flash Experimental",
+		id: "gemini-2.5-pro-exp-03-25",
+		name: "Gemini 2.5 Pro",
 		provider: "google",
 		type: "universal",
 	},
 	{
-		id: "gemini-2.0-flash-thinking-exp-01-21",
-		name: "Gemini 2.0 Flash Thinking Experimental",
+		id: "gemini-2.5-flash-preview-04-17",
+		name: "Gemini 2.5 Flash",
 		provider: "google",
 		type: "universal",
 	},
