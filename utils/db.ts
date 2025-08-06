@@ -118,7 +118,7 @@ export const textGenModels: Model[] = [
 	},
 	{
 		id: "@cf/openai/gpt-oss-20b",
-		name: "gpt-oss-120b",
+		name: "gpt-oss-20b",
 		provider: "workers-ai",
 		type: "chat",
 	},
