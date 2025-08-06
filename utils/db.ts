@@ -111,18 +111,6 @@ export const uniModals: Model[] = [
 
 export const textGenModels: Model[] = [
 	{
-		id: "@cf/openai/gpt-oss-120b",
-		name: "gpt-oss-120b",
-		provider: "workers-ai",
-		type: "chat",
-	},
-	{
-		id: "@cf/openai/gpt-oss-20b",
-		name: "gpt-oss-20b",
-		provider: "workers-ai",
-		type: "chat",
-	},
-	{
 		id: "@cf/meta/llama-4-scout-17b-16e-instruct",
 		name: "llama-4-scout-17b-16e-instruct",
 		provider: "workers-ai",
@@ -137,12 +125,6 @@ export const textGenModels: Model[] = [
 	{
 		id: "@cf/meta/llama-3.1-8b-instruct-fast",
 		name: "llama-3.1-8b-instruct-fast",
-		provider: "workers-ai",
-		type: "chat",
-	},
-	{
-		id: "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
-		name: "deepseek-r1-distill-qwen-32b",
 		provider: "workers-ai",
 		type: "chat",
 	},
