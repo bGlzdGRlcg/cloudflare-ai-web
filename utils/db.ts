@@ -71,16 +71,27 @@ export const DB = new Database();
 export const initialSettings = {
 	openaiKey: "",
 	image_steps: 20,
-	system_prompt:
-		"",
+	system_prompt: "",
 };
 
 export type Settings = typeof initialSettings;
 
 export const uniModals: Model[] = [
 	{
-		id: "gemini-2.0-flash-lite",
-		name: "Gemini 2.0 Flash-Lite",
+		id: "gemini-2.5-flash-lite",
+		name: "Gemini 2.5 Flash-Lite",
+		provider: "google",
+		type: "universal",
+	},
+	{
+		id: "gemini-2.5-pro",
+		name: "Gemini 2.5 Pro",
+		provider: "google",
+		type: "universal",
+	},
+	{
+		id: "gemini-2.5-flash",
+		name: "Gemini 2.5 Flash",
 		provider: "google",
 		type: "universal",
 	},
@@ -91,14 +102,8 @@ export const uniModals: Model[] = [
 		type: "universal",
 	},
 	{
-		id: "gemini-2.5-pro-exp-03-25",
-		name: "Gemini 2.5 Pro",
-		provider: "google",
-		type: "universal",
-	},
- {
-		id: "gemini-2.5-flash-preview-04-17",
-		name: "Gemini 2.5 Flash",
+		id: "gemini-2.0-flash-lite",
+		name: "Gemini 2.0 Flash-Lite",
 		provider: "google",
 		type: "universal",
 	},
@@ -106,44 +111,20 @@ export const uniModals: Model[] = [
 
 export const textGenModels: Model[] = [
 	{
-		id: "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
-		name: "deepseek-r1-distill-qwen-32b",
+		id: "@cf/openai/gpt-oss-120b",
+		name: "gpt-oss-120b",
 		provider: "workers-ai",
 		type: "chat",
 	},
 	{
-		id: "@hf/thebloke/deepseek-coder-6.7b-instruct-awq",
-		name: "deepseek-coder-6.7b-instruct-awq",
+		id: "@cf/openai/gpt-oss-20b",
+		name: "gpt-oss-120b",
 		provider: "workers-ai",
 		type: "chat",
 	},
 	{
-		id: "@cf/deepseek-ai/deepseek-math-7b-instruct",
-		name: "deepseek-math-7b-instruct",
-		provider: "workers-ai",
-		type: "chat",
-	},
-	{
-		id: "@cf/google/gemma-2b-it-lora",
-		name: "gemma-2b-it-lora",
-		provider: "workers-ai",
-		type: "chat",
-	},
-	{
-		id: "@hf/google/gemma-7b-it",
-		name: "gemma-7b-it",
-		provider: "workers-ai",
-		type: "chat",
-	},
-	{
-		id: "@cf/openchat/openchat-3.5-0106",
-		name: "openchat-3.5-0106",
-		provider: "workers-ai",
-		type: "chat",
-	},
-	{
-		id: "@hf/nousresearch/hermes-2-pro-mistral-7b",
-		name: "hermes-2-pro-mistral-7b",
+		id: "@cf/meta/llama-4-scout-17b-16e-instruct",
+		name: "llama-4-scout-17b-16e-instruct",
 		provider: "workers-ai",
 		type: "chat",
 	},
@@ -154,57 +135,20 @@ export const textGenModels: Model[] = [
 		type: "chat",
 	},
 	{
-		id: "@hf/meta-llama/meta-llama-3-8b-instruct",
-		name: "meta-llama-3-8b-instruct",
+		id: "@cf/meta/llama-3.1-8b-instruct-fast",
+		name: "llama-3.1-8b-instruct-fast",
 		provider: "workers-ai",
 		type: "chat",
 	},
 	{
-		id: "@hf/thebloke/openhermes-2.5-mistral-7b-awq",
-		name: "openhermes-2.5-mistral-7b-awq",
-		provider: "workers-ai",
-		type: "chat",
-	},
-	{
-		id: "@cf/qwen/qwen1.5-14b-chat-awq",
-		name: "qwen1.5-14b-chat-awq",
-		provider: "workers-ai",
-		type: "chat",
-	},
-	{
-		id: "@hf/nexusflow/starling-lm-7b-beta",
-		name: "starling-lm-7b-beta",
-		provider: "workers-ai",
-		type: "chat",
-	},
-	{
-		id: "@hf/thebloke/zephyr-7b-beta-awq",
-		name: "zephyr-7b-beta-awq",
+		id: "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+		name: "deepseek-r1-distill-qwen-32b",
 		provider: "workers-ai",
 		type: "chat",
 	},
 ];
 
-export const imageGenModels: Model[] = [
-	{
-		id: "@cf/lykon/dreamshaper-8-lcm",
-		name: "dreamshaper-8-lcm",
-		provider: "workers-ai-image",
-		type: "text-to-image",
-	},
-	{
-		id: "@cf/stabilityai/stable-diffusion-xl-base-1.0",
-		name: "stable-diffusion-xl-base-1.0",
-		provider: "workers-ai-image",
-		type: "text-to-image",
-	},
-	{
-		id: "@cf/bytedance/stable-diffusion-xl-lightning",
-		name: "stable-diffusion-xl-lightning",
-		provider: "workers-ai-image",
-		type: "text-to-image",
-	},
-];
+export const imageGenModels: Model[] = [];
 
 export const models: Model[] = [
 	...uniModals,
